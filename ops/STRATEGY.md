@@ -49,3 +49,4 @@ RU: Jacey Moretti · AI-муза с настоящей драмой / Новая
 - Higgsfield affiliate (16.10): просят email аккаунта и реф-ссылку; маркетинговые коллабы — marketing@higgsfield.ai (адрес дал сам Higgsfield).
 - Good Molecules (23.10): отказ.
 - Ставки для AI-инструментов: Reel $650 / Reel + 3 Stories $850 / права на рекламу +50 % за 30 дней. Нижняя граница торга: $450 за Reel.
+- 21.11: ответ Kolect отправлен (тред Dreamina, jaceymoretti@gmail.com): Reel $500 / Reel + 3 Stories $700, оба бренда (Dreamina, Buzzy Now). Нижняя граница торга — $300. Ждём бриф.
