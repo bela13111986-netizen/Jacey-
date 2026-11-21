@@ -1,0 +1,273 @@
+<title>Jacey Moretti</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600&display=swap">
+<style>
+/* Layout: full-bleed portrait hero, then a magazine-style media kit on warm paper, one column on phones */
+:root{
+  --paper:#F5EFE7; --paper-2:#EBE2D6; --ink:#2A201B; --ink-soft:#5E5047; --line:#D9CCBD;
+  --wine:#7B2532; --gold:#A88457; --photo-shade:rgba(24,16,12,.86); --on-photo:#F6EEE3; --card:#FBF8F3;
+  --display:'Cormorant Garamond',Georgia,'Times New Roman',serif;
+  --text:Inter,system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --paper:#1C1512; --paper-2:#261D18; --ink:#F1E8DC; --ink-soft:#BFB0A1; --line:#3E322B;
+  --wine:#D07884; --gold:#CDA878; --card:#231A16; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --paper:#1C1512; --paper-2:#261D18; --ink:#F1E8DC; --ink-soft:#BFB0A1; --line:#3E322B;
+  --wine:#D07884; --gold:#CDA878; --card:#231A16; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--paper);color:var(--ink);font-family:var(--text);font-size:15px;line-height:1.6;margin:0}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1.05;margin:0;text-wrap:balance}
+.wrap{max-width:1080px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.eyebrow{font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--wine);font-weight:500}
+section{padding-block:72px}
+section+section{border-top:1px solid var(--line)}
+
+/* hero */
+.hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;overflow:hidden;background:#2A201B}
+.hero img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 58%}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.25) 0%,rgba(0,0,0,0) 30%,rgba(0,0,0,0) 45%,var(--photo-shade) 85%)}
+.hero .wrap{position:relative;z-index:1;width:100%;padding-block:56px;color:var(--on-photo)}
+.hero .eyebrow{color:#E9C9A4}
+.hero h1{font-size:clamp(56px,11vw,128px);margin:10px 0 6px;letter-spacing:-.01em}
+.hero h1 i{font-weight:400}
+.hero p.lede{font-family:var(--display);font-style:italic;font-size:clamp(19px,2.4vw,24px);max-width:36ch;margin:0 0 26px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 22px;border-radius:999px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;font-weight:500;text-decoration:none;border:1px solid currentColor}
+.btn.solid{background:var(--on-photo);color:#2A201B;border-color:var(--on-photo)}
+.btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+/* numbers */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;margin-top:28px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.kpi{padding:26px 18px 22px;border-right:1px solid var(--line)}
+.kpi:last-child{border-right:0}
+.kpi b{display:block;font-family:var(--display);font-weight:500;font-size:clamp(38px,5vw,54px);line-height:1;color:var(--ink);font-variant-numeric:lining-nums tabular-nums}
+.kpi span{display:block;margin-top:8px;font-size:13px;color:var(--ink-soft);line-height:1.4}
+.src{font-size:12px;color:var(--ink-soft);margin-top:14px}
+.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:end}
+.intro h2{font-size:clamp(34px,5vw,52px)}
+.intro p{color:var(--ink-soft);margin:0;max-width:52ch}
+
+/* audience */
+.aud{display:grid;grid-template-columns:1fr 1fr;gap:48px;margin-top:30px}
+.bars{display:grid;gap:12px}
+.bar{display:grid;grid-template-columns:130px minmax(0,1fr) 46px;align-items:center;gap:12px;font-size:14px}
+.bar .t{height:8px;background:var(--paper-2);border-radius:4px;overflow:hidden}
+.bar .t i{display:block;height:100%;background:var(--wine);border-radius:4px}
+.bar em{font-style:normal;text-align:right;font-variant-numeric:tabular-nums;color:var(--ink-soft)}
+.aud h3{font-size:24px;margin-bottom:16px}
+
+/* reels */
+.reels{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px;margin-top:30px}
+.reel{display:block;text-decoration:none;background:var(--card);border:1px solid var(--line);padding:18px 16px;border-radius:2px}
+.reel:hover{border-color:var(--gold)}
+.reel b{display:block;font-family:var(--display);font-size:34px;font-weight:500;line-height:1}
+.reel small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--wine);margin:6px 0 10px}
+.reel p{margin:0;font-size:13px;line-height:1.45;color:var(--ink-soft)}
+
+/* gallery */
+.gallery{columns:3 240px;column-gap:12px;margin-top:30px}
+.gallery img{width:100%;display:block;margin:0 0 12px;break-inside:avoid}
+
+/* work */
+.steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px;margin-top:30px}
+.steps h3{font-size:24px;margin:8px 0 6px}
+.steps p{margin:0;color:var(--ink-soft);font-size:14px}
+.steps .n{font-family:var(--display);font-size:20px;color:var(--wine)}
+.packs{margin-top:44px;border-top:1px solid var(--line)}
+.pack{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:20px;padding:18px 0;border-bottom:1px solid var(--line);align-items:baseline}
+.pack h3{font-size:24px}
+.pack p{margin:4px 0 0;font-size:14px;color:var(--ink-soft)}
+.pack .price{font-family:var(--display);font-size:22px;white-space:nowrap}
+.note{font-size:13px;color:var(--ink-soft);margin-top:16px;max-width:70ch}
+
+/* shop */
+.shop{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1fr);gap:48px;align-items:center}
+.shop img{width:100%;max-width:100%;aspect-ratio:9/16;object-fit:cover;max-height:620px}
+.shop h2{font-size:clamp(38px,5vw,56px);margin:10px 0 14px}
+.shop ul{padding:0;margin:0 0 24px;list-style:none;display:grid;gap:8px}
+.shop li{padding-left:18px;position:relative;color:var(--ink-soft)}
+.shop li::before{content:"";position:absolute;left:0;top:.7em;width:8px;height:1px;background:var(--wine)}
+.shop .btn{color:var(--ink)}
+
+/* contact */
+.contact{text-align:left}
+.contact h2{font-size:clamp(40px,6vw,68px);margin:10px 0 18px}
+.mail{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin:18px 0}
+.mail code{font-family:var(--text);font-size:clamp(18px,2.6vw,24px);background:var(--card);border:1px solid var(--line);padding:12px 18px;user-select:all;word-break:break-all}
+.copy{cursor:pointer;background:transparent;color:var(--ink)}
+footer{padding-block:28px;border-top:1px solid var(--line);font-size:12px;color:var(--ink-soft)}
+
+@media (max-width:820px){
+  .intro,.aud,.shop{grid-template-columns:1fr;gap:28px}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .kpi:nth-child(2){border-right:0}
+  .kpi:nth-child(-n+2){border-bottom:1px solid var(--line)}
+  .reels{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:1fr}
+  section{padding-block:52px}
+  .bar{grid-template-columns:100px minmax(0,1fr) 42px}
+}
+@media (prefers-reduced-motion:no-preference){.reel,.btn{transition:border-color .2s,background .2s}}
+</style>
+
+<header class="hero">
+  <img src="img/cover.jpg" alt="Jacey Moretti in a Paris apartment with a bouquet of roses">
+  <div class="wrap">
+    <div class="eyebrow">AI lifestyle character · Instagram</div>
+    <h1>Jacey <i>Moretti</i></h1>
+    <p class="lede">Quiet luxury, Paris mornings and a love story her audience follows like a series.</p>
+    <div class="cta">
+      <a class="btn solid" href="#contact">Work with Jacey</a>
+      <a class="btn" href="https://www.instagram.com/jacey_influencer/" target="_blank" rel="noopener">@jacey_influencer</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="kit">
+  <div class="wrap">
+    <div class="intro">
+      <div>
+        <div class="eyebrow">Media kit · November 2026</div>
+        <h2>Half a million people<br>met Jacey this month</h2>
+      </div>
+      <p>Jacey is a clearly labelled AI character: an Italian woman with a Greek and Russian family, a taste for European hotels and cafés, and an on-screen partner, David. Her Reels play like short episodes, so brands appear inside a story people already follow.</p>
+    </div>
+    <div class="kpis">
+      <div class="kpi"><b>42.3K</b><span>followers</span></div>
+      <div class="kpi"><b>503K</b><span>accounts reached in the last 30 days</span></div>
+      <div class="kpi"><b>96%</b><span>of reach from people who don't follow yet</span></div>
+      <div class="kpi"><b>7.0M</b><span>views on the top Reel, with 98.7K shares</span></div>
+    </div>
+    <p class="src">Source: Instagram Insights, 22 Oct – 20 Nov 2026 (reach) and the last 90 days (Reels).</p>
+  </div>
+</section>
+
+<section id="audience">
+  <div class="wrap">
+    <div class="eyebrow">Audience</div>
+    <div class="aud">
+      <div>
+        <h3>Age of followers</h3>
+        <div class="bars">
+          <div class="bar"><span>25–34</span><div class="t"><i style="width:28%"></i></div><em>16%</em></div>
+          <div class="bar"><span>35–44</span><div class="t"><i style="width:42%"></i></div><em>24%</em></div>
+          <div class="bar"><span>45–54</span><div class="t"><i style="width:39%"></i></div><em>22%</em></div>
+          <div class="bar"><span>55–64</span><div class="t"><i style="width:30%"></i></div><em>17%</em></div>
+          <div class="bar"><span>65+</span><div class="t"><i style="width:21%"></i></div><em>12%</em></div>
+        </div>
+        <p class="note">63% of followers are 35–64. Women make up 74% of followers who state a gender.</p>
+      </div>
+      <div>
+        <h3>Top countries</h3>
+        <div class="bars">
+          <div class="bar"><span>Russia</span><div class="t"><i style="width:44%"></i></div><em>11%</em></div>
+          <div class="bar"><span>United States</span><div class="t"><i style="width:42%"></i></div><em>11%</em></div>
+          <div class="bar"><span>Brazil</span><div class="t"><i style="width:21%"></i></div><em>5%</em></div>
+          <div class="bar"><span>Italy</span><div class="t"><i style="width:20%"></i></div><em>5%</em></div>
+          <div class="bar"><span>Turkey</span><div class="t"><i style="width:14%"></i></div><em>4%</em></div>
+          <div class="bar"><span>United Kingdom</span><div class="t"><i style="width:10%"></i></div><em>3%</em></div>
+          <div class="bar"><span>Germany</span><div class="t"><i style="width:9%"></i></div><em>2%</em></div>
+          <div class="bar"><span>Spain</span><div class="t"><i style="width:9%"></i></div><em>2%</em></div>
+        </div>
+        <p class="note">A truly international audience: no single country is more than 11%.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="reels">
+  <div class="wrap">
+    <div class="eyebrow">Top Reels</div>
+    <div class="reels">
+      <a class="reel" href="https://www.instagram.com/reel/DdJaj7ouuMF/" target="_blank" rel="noopener"><b>7.0M</b><small>views · 98.7K shares</small><p>Mood piece that launched the account.</p></a>
+      <a class="reel" href="https://www.instagram.com/reel/DdMMb4_u1gS/" target="_blank" rel="noopener"><b>4.3M</b><small>views · 13.6K shares</small><p>She almost managed to meet someone this time.</p></a>
+      <a class="reel" href="https://www.instagram.com/reel/DdWiLkdsB_M/" target="_blank" rel="noopener"><b>2.8M</b><small>views · 5.5K shares</small><p>Sitting next to someone and still feeling alone.</p></a>
+      <a class="reel" href="https://www.instagram.com/reel/DeuJO6Pu4kB/" target="_blank" rel="noopener"><b>1.1M</b><small>views · 3.9K shares</small><p>David smiles at his phone more than at her.</p></a>
+      <a class="reel" href="https://www.instagram.com/reel/DeEp1pEOAel/" target="_blank" rel="noopener"><b>664K</b><small>views · 18K shares</small><p>Her Greek soul took over.</p></a>
+    </div>
+  </div>
+</section>
+
+<section id="portfolio">
+  <div class="wrap">
+    <div class="eyebrow">Portfolio</div>
+    <div class="gallery">
+      <img src="img/louvre.jpg" alt="Blue hour at the Louvre in a black mini dress" loading="lazy">
+      <img src="img/lipstick.jpg" alt="Red lipstick in a gilded powder room" loading="lazy">
+      <img src="img/pasta.jpg" alt="Lunch on a Paris terrace" loading="lazy">
+      <img src="img/balcony.jpg" alt="Black lace on a Paris balcony" loading="lazy">
+      <img src="img/carette.jpg" alt="Breakfast at a historic Paris café" loading="lazy">
+      <img src="img/peonies.jpg" alt="Pink peonies on a marble staircase" loading="lazy">
+      <img src="img/eiffel-cafe.jpg" alt="Café table with a view of the Eiffel Tower" loading="lazy">
+      <img src="img/lace-cafe.jpg" alt="Leather and lace on a bistro terrace" loading="lazy">
+      <img src="img/croissant.jpg" alt="Morning croissant in a cream trench" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">How we work with brands</div>
+    <div class="steps">
+      <div><span class="n">i.</span><h3>Your product in the story</h3><p>David gives her the perfume. She dresses for dinner at his mother's. The product drives the scene instead of interrupting it.</p></div>
+      <div><span class="n">ii.</span><h3>You approve every frame</h3><p>We generate from your product photos so packaging and details stay accurate, and nothing goes live without your sign-off.</p></div>
+      <div><span class="n">iii.</span><h3>Labelled, then reported</h3><p>Every post is marked as a paid partnership and as AI-generated. Seven days later you get the full Insights report.</p></div>
+    </div>
+    <div class="packs">
+      <div class="pack"><div><h3>Signature Reel</h3><p>One story episode with your product, 15–30 seconds, pinned comment.</p></div><div class="price">from $450</div></div>
+      <div class="pack"><div><h3>Reel + Stories</h3><p>The Reel plus three Stories with a link sticker.</p></div><div class="price">from $600</div></div>
+      <div class="pack"><div><h3>UGC video</h3><p>A Jacey video for your own channels and ads, not posted on her account.</p></div><div class="price">from $300</div></div>
+      <div class="pack"><div><h3>Monthly muse</h3><p>Three Reels, six Stories and a carousel, with category exclusivity.</p></div><div class="price">from $1,500</div></div>
+    </div>
+    <p class="note">Usage rights for paid ads are quoted separately. Final rates depend on scope and timing.</p>
+  </div>
+</section>
+
+<section id="shop">
+  <div class="wrap shop">
+    <img src="img/roses.jpg" alt="Cover of the European Days prompt collection" loading="lazy">
+    <div>
+      <div class="eyebrow">Prompt Studio</div>
+      <h2>European Days</h2>
+      <p>50 luxury photo prompts: Paris, grand hotels, cozy cafés, evening streets. Upload one photo of yourself and create your own luxury photoshoots.</p>
+      <ul>
+        <li>50 ready-to-copy prompts with one signature color grade</li>
+        <li>Step-by-step guide for Gemini, Google Flow and Nano Banana Pro</li>
+        <li>4 ready photo stories of 9 frames each</li>
+        <li>English and Russian editions</li>
+      </ul>
+      <a class="btn" href="https://www.instagram.com/jacey_influencer/" target="_blank" rel="noopener">Get it via the link in bio</a>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="wrap">
+    <div class="eyebrow">Collaborations</div>
+    <h2>Let's create her<br><i>next episode</i> together</h2>
+    <p>Send a short brief and your timing. We reply within two business days.</p>
+    <div class="mail">
+      <code id="email">jaceymoretti@gmail.com</code>
+      <button class="btn copy" id="copy-email" type="button">Copy email</button>
+    </div>
+    <p class="note">Or message <a href="https://www.instagram.com/jacey_influencer/" target="_blank" rel="noopener">@jacey_influencer</a> on Instagram.</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Jacey Moretti is an AI-generated character. All sponsored content is labelled as a paid partnership and as AI-generated. Audience figures from Instagram Insights, November 2026.</div>
+</footer>
+
+<script>
+document.getElementById('copy-email').addEventListener('click', function(){
+  var btn=this, text=document.getElementById('email').textContent;
+  function done(){btn.textContent='Copied';setTimeout(function(){btn.textContent='Copy email'},1800)}
+  function fallback(){var r=document.createRange();r.selectNodeContents(document.getElementById('email'));var s=window.getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='Selected, press copy'}
+  try{navigator.clipboard.writeText(text).then(done,fallback)}catch(e){fallback()}
+});
+</script>
