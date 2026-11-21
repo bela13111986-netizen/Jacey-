@@ -2,7 +2,7 @@ import json,sys,html
 from texts import *
 lang=sys.argv[1]; t=T[lang]
 d=json.load(open('data_fixed.json')); P={p['num']:p for p in d['prompts']}
-PH={2:'im-002.jpg',4:'im-003.jpg',5:'im-004.jpg',6:'im-005-clean.jpg',8:'im-006.jpg',12:'im-007.jpg',16:'im-008.jpg',17:'im-009.jpg',22:'im-010.jpg',26:'im-011.jpg'}
+PH={2:'im-002.jpg',4:'im-003.jpg',5:'im-004.jpg',6:'im-005.jpg',8:'im-006.jpg',12:'im-007.jpg',16:'im-008.jpg',17:'im-009.jpg',22:'im-010.jpg',26:'im-011.jpg'}
 e=html.escape
 def cat(c): return CAT_RU[c] if lang=='ru' else c
 pages=[]; pn=[0]
