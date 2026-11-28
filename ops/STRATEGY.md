@@ -68,3 +68,4 @@ RU: Jacey Moretti · AI-муза с настоящей драмой / Новая
 - Продажи пака: «Comment LUXURY — I'll send you a free prompt» (пока ManyChat не работает — отвечаем вручную/ссылка в шапке)
 - Бренды/портфолио: UGC не в ленту, а в медиакит; в ленте — «Brands: collabs in bio 📩»
 Недельный баланс: 3 охват/отправки, 2 подписки, 1 комментарии, 1 продажи.
+- 28.11: по согласию Беллы ответила Mia (ManyChat) в треде: старый workspace зарегистрирован на Ferrarik@mail.ru, просим отвязать @jacey_influencer для подключения к jaceymoretti@gmail.com. Ждём ответ.
